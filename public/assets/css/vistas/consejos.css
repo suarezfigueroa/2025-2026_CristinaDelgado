@@ -1,0 +1,125 @@
+/********************************
+    Estilos de la vista Consejos
+*********************************/
+
+/****** CONTENEDOR ******/
+#consejos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/****** TARJETA CLIMA ******/
+.consejos-clima-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 4px 16px rgba(30, 90, 125, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid var(--secondary-blue);
+    flex-wrap: wrap;
+}
+
+/****** LISTA DE CONSEJOS ******/
+#consejos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.consejos-vacio {
+    text-align: center;
+    color: var(--dark-gray);
+    padding: 3rem 0;
+    font-size: 1rem;
+}
+
+/****** TARJETA DE CONSEJO ******/
+.consejo-card {
+    border-radius: 20px;
+    border: 2px solid var(--secondary-blue);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.consejo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(30, 90, 125, 0.12);
+}
+
+.consejo-card.azul {
+    border-color: var(--secondary-blue);
+}
+
+.consejo-card.amarillo {
+    border-color: #FFD93D;
+}
+
+/* Header en blanco para que el GIF no tenga fondo de color */
+.consejo-card-header {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: var(--white);
+}
+
+.consejo-card-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+/* Body con color según variante */
+.consejo-card-body {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.consejo-card.azul .consejo-card-body {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.consejo-card.amarillo .consejo-card-body {
+    background: linear-gradient(135deg, #FFE878 0%, #FFD93D 100%);
+    color: var(--primary-blue);
+}
+
+.consejo-card.azul:hover .consejo-card-body {
+    background: #174a68;
+}
+
+.consejo-card.amarillo:hover .consejo-card-body {
+    background: linear-gradient(135deg, #FFD93D 0%, #E6A800 100%);
+}
+
+/****** RESPONSIVE ******/
+@media (max-width: 768px) {
+    #consejos-container {
+        padding: 1rem;
+    }
+
+    .consejos-clima-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .clima-datos {
+        justify-content: center;
+    }
+
+    .clima-desc {
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
+}

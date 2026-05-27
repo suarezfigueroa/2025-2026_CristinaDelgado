@@ -1,0 +1,23 @@
+<div id="consejos-container">
+    <div class="vista-header">
+        <h2 class="vista-titulo" style="text-align:center">Consejos</h2>
+    </div>
+
+    <!-- ********** CLIMA ACTUAL ********** -->
+    <!-- Los datos se cargan desde la API del tiempo en consejos.js -->
+    <div id="consejos-clima-card" class="consejos-clima-card">
+        <div class="clima-ciudad">
+            <span class="clima-pin">📍</span>
+            <span id="consejos-ciudad">Cargando...</span>
+        </div>
+        <div class="clima-datos">
+            <div class="clima-temp" id="consejos-temp">--°C</div>
+            <div class="clima-icono" id="consejos-icono">⏳</div>
+            <div class="clima-desc" id="consejos-desc"></div>
+        </div>
+    </div>
+
+    <!-- ********** LISTA DE CONSEJOS ********** -->
+    <!-- Las tarjetas se generan aquí por JS usando #template-consejo de dashboard.php -->
+    <div id="consejos-lista"></div>
+</div>
