@@ -42,7 +42,7 @@
     - [5.2 Vinculación con los contenidos del Ciclo Formativo](#52-vinculación-con-los-contenidos-del-ciclo-formativo)
   - [6. Recursos utilizados](#6-recursos-utilizados)
     - [6.1 Entornos de desarrollo](#61-entornos-de-desarrollo)
-    - [6.2 Lenguajes de programación 💻](#62-lenguajes-de-programación-)
+    - [6.2 Lenguajes de programación](#62-lenguajes-de-programación)
     - [6.3 Utilidades](#63-utilidades)
   - [7. Tecnologías de desarrollo](#7-tecnologías-de-desarrollo)
     - [PHP](#php)
@@ -162,7 +162,7 @@ MeteoPet integra de forma práctica los conocimientos trabajados a lo largo del 
 - **phpMyAdmin** — interfaz visual para gestionar la base de datos MySQL, crear tablas y hacer consultas durante el desarrollo
 - **Git / GitHub** — control de versiones y repositorio remoto del proyecto
 
-### 6.2 Lenguajes de programación 💻
+### 6.2 Lenguajes de programación
 
 - **PHP** — backend y API REST propia. Gestiona las peticiones del servidor, la lógica de negocio, las sesiones de usuario, el control de roles y la comunicación con la base de datos.
 - **MySQL** — base de datos relacional. Almacena todos los datos de la aplicación: usuarios, mascotas, ciudades, publicaciones del foro, mensajes de contacto y consejos.
