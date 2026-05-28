@@ -514,3 +514,11 @@ document.querySelectorAll('.btn-toggle-pass').forEach(function (btn) {
         }
     });
 });
+
+///// Abre el modal de contacto al pulsar ¿Olvidaste tu contraseña? /////
+document.querySelector('#btn-recuperar-pass').addEventListener('click', function (e) {
+    e.preventDefault();
+    cerrarModalLogin();
+    document.querySelector('#contacto-tipo').value = 'problema';
+    abrirModalContacto();
+});
