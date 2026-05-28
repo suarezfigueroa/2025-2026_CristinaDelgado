@@ -17,14 +17,14 @@
 
 ---
 
-|                           |                                                                                          |
-| ------------------------- | ---------------------------------------------------------------------------------------- |
-| **Ciclo Formativo**       | Desarrollo de Aplicaciones Web (DAW)                                                     |
-| **Centro educativo**      | I.E.S. Suárez de Figueroa                                                                |
-| **Autora**                | Cristina Delgado Sayavera                                                                |
-| **Tutor**                 | José Andrés Paredes Arribas                                                              |
-| **Fecha de presentación** | Junio 2026                                                                               |
-| **Repositorio**           | [Ver en GitHub](https://github.com/suarezfigueroa/2025-2026_CristinaDelgado/tree/master) |
+|                           |                                      |
+| ------------------------- | ------------------------------------ |
+| **Ciclo Formativo**       | Desarrollo de Aplicaciones Web (DAW) |
+| **Centro educativo**      | I.E.S. Suárez de Figueroa            |
+| **Autora**                | Cristina Delgado Sayavera            |
+| **Tutor**                 | José Andrés Paredes Arribas          |
+| **Fecha de presentación** | Junio 2026                           |
+| **Repositorio**           | *(pendiente de subir a GitHub)*      |
 
 </div>
 

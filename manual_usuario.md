@@ -66,11 +66,12 @@ Para disfrutar de todo lo que ofrece MeteoPet necesitas registrarte. Es gratis y
 2. Rellena el formulario con tu nombre, email y contraseña
 3. Elige tu **provincia** y tu **ciudad principal** — esta es la ciudad que MeteoPet usará para darte los consejos del tiempo
 4. Elige un **avatar** de la galería — ¡el que más te guste!
-5. Pulsa **"Crear cuenta"**
+5. Acepta los **términos y condiciones** — puedes leerlos pulsando el enlace antes de aceptar
+6. Pulsa **"Crear cuenta"**
 
 > 💡 La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un carácter especial (como `!`, `@`, `#`...)
 
-![Formulario de registro](img/capturas/modal_registro.PNG)
+![Formulario de registro](img/capturas/modal_registro.png)
 
 ---
 
@@ -78,7 +79,9 @@ Para disfrutar de todo lo que ofrece MeteoPet necesitas registrarte. Es gratis y
 
 Si ya tienes cuenta, pulsa **"Iniciar sesión"** en el menú y escribe tu email y contraseña. ¡Y ya estás dentro! 🎉
 
-![Modal de inicio de sesión](img/capturas/modal_login.PNG)
+> 💡 Si has olvidado tu contraseña, pulsa **"¿Olvidaste tu contraseña?"** y te abrirá el formulario de contacto para que puedas solicitar una nueva.
+
+![Modal de inicio de sesión](img/capturas/modal_login.png)
 
 ---
 
@@ -94,7 +97,7 @@ En el menú superior tienes todos los apartados disponibles. En la esquina derec
 
 ![Vista de inicio del dashboard](img/capturas/dashboard_inicio.png)
 
-![Menú de navegación — usuario](img/capturas/navbar_dropdown_usuario.PNG)
+![Menú de navegación — usuario](img/capturas/navbar_dropdown_usuario.png)
 
 ---
 
@@ -121,7 +124,7 @@ Pulsa sobre la tarjeta de cualquier mascota para ver su ficha completa. Desde ah
 - **Eliminar** la mascota con el botón 🗑️
 - Ver un **consejo personalizado** para ella según el tiempo de hoy pulsando **"🐾 Ver consejo"**
 
-![Ficha de mascota con consejo](img/capturas/ficha_mascota.PNG)
+![Ficha de mascota con consejo](img/capturas/ficha_mascota.png)
 ![Editar mascota](img/capturas/editar_mascota.png)
 
 ---
@@ -215,7 +218,7 @@ Si decides irte (¡esperemos que no! 😢) puedes eliminar tu cuenta desde la se
 
 El panel de admin tiene cuatro pestañas:
 
-![Menú de navegación — administrador](img/capturas/navbar_dropdown_admin.PNG)
+![Menú de navegación — administrador](img/capturas/navbar_dropdown_admin.png)
 
 ### 📋 Foro pendiente
 Aquí aparecen todas las publicaciones que los usuarios han enviado y están esperando revisión. Puedes **aprobarlas** ✅ para que sean visibles en el foro o **rechazarlas** ❌.
@@ -237,7 +240,7 @@ Ve la lista de todos los usuarios registrados. Puedes ver sus mascotas y, si es 
 
 ![Lista de usuarios registrados](img/capturas/admin_usuarios.png)
 
-![Resetear contraseña de usuario](img/capturas/admin_password.PNG)
+![Resetear contraseña de usuario](img/capturas/admin_password.png)
 
 ---
 
