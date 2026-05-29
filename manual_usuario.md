@@ -1,15 +1,15 @@
-# Manual de Usuario 🐾
+# Manual de Usuario 
 
-## MeteoPet — Tu app del tiempo para mascotas
+## MeteoPet — Tu app del tiempo para mascotas 🐾🌦️
 
-Bienvenido/a al manual de MeteoPet. Aquí te explicamos todo lo que puedes hacer en la app, paso a paso y sin complicaciones. 🌦️
+Bienvenido/a al manual de MeteoPet. Aquí te explicamos todo lo que puedes hacer en la app, paso a paso y sin complicaciones. 
 
 ---
 
 ## Índice
 
-- [Manual de Usuario 🐾](#manual-de-usuario-)
-  - [MeteoPet — Tu app del tiempo para mascotas](#meteopet--tu-app-del-tiempo-para-mascotas)
+- [Manual de Usuario](#manual-de-usuario)
+  - [MeteoPet — Tu app del tiempo para mascotas 🐾🌦️](#meteopet--tu-app-del-tiempo-para-mascotas-️)
   - [Índice](#índice)
   - [1. ¿Qué es MeteoPet?](#1-qué-es-meteopet)
   - [2. Cómo acceder a la app](#2-cómo-acceder-a-la-app)
@@ -77,7 +77,7 @@ Para disfrutar de todo lo que ofrece MeteoPet necesitas registrarte. Es gratis y
 
 ## 4. Iniciar sesión
 
-Si ya tienes cuenta, pulsa **"Iniciar sesión"** en el menú y escribe tu email y contraseña. ¡Y ya estás dentro! 🎉
+Si ya tienes cuenta, pulsa **"Iniciar sesión"** en el menú y escribe tu email y contraseña. ¡Y ya estás dentro! 
 
 > 💡 Si has olvidado tu contraseña, pulsa **"¿Olvidaste tu contraseña?"** y te abrirá el formulario de contacto para que puedas solicitar una nueva.
 
@@ -122,7 +122,7 @@ Pulsa sobre la tarjeta de cualquier mascota para ver su ficha completa. Desde ah
 
 - **Editar** sus datos con el botón ✏️
 - **Eliminar** la mascota con el botón 🗑️
-- Ver un **consejo personalizado** para ella según el tiempo de hoy pulsando **"🐾 Ver consejo"**
+- Ver un **consejo personalizado** para ella según el tiempo de hoy pulsando **" Ver consejo"**
 
 ![Ficha de mascota con consejo](img/capturas/ficha_mascota.png)
 ![Editar mascota](img/capturas/editar_mascota.png)

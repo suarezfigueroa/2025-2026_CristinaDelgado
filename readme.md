@@ -75,7 +75,7 @@
     - [10.3 Seguridad](#103-seguridad)
     - [10.4 Instalación en local](#104-instalación-en-local)
   - [11. Manual de usuario](#11-manual-de-usuario)
-  - [12. Conclusiones y aspectos a mejorar 🐾](#12-conclusiones-y-aspectos-a-mejorar-)
+  - [12. Conclusiones y aspectos a mejorar](#12-conclusiones-y-aspectos-a-mejorar)
     - [Conclusiones](#conclusiones)
     - [Aspectos a mejorar y líneas futuras](#aspectos-a-mejorar-y-líneas-futuras)
   - [13. Bibliografía](#13-bibliografía)
@@ -89,13 +89,13 @@
 
 MeteoPet nació de la combinación de mis dos grandes pasiones: la meteorología y mis animales. 🌦️🐱🐶
 
-Soy geógrafa con especialización en climatología, así que el tiempo atmosférico es algo que me ha fascinado desde pequeña. Me encanta observar el cielo, entender por qué llueve o truena, hacer seguimientos... Es algo que llevo muy dentro. 🌩️
+Soy geógrafa con especialización en climatología, así que el tiempo atmosférico es algo que me ha fascinado desde pequeña. Me encanta observar el cielo, entender por qué llueve o truena, hacer seguimientos... Es algo que me apasiona.
 
-Y luego están ellos: Tato, Luna, Benji y Tigrin. 🐶🐶🐱🐱 Cualquiera que conviva con animales sabe que el tiempo les afecta igual que a nosotros, aunque a veces no le prestamos atención. Tato ladra cuando hay tormenta porque tiene miedo, Benji se esconde. Con el calor, Tato busca su rincón del verano y Tigrin y Benji ya no se suben a la cama a acurrucarse a dormir conmigo. Luna está menos activa cuando el sol aprieta... ☀️ Cada uno tiene sus cosas, y como parte de la familia una aprende a leerlos. ❤️
+Y luego están ellos: Tato, Luna, Benji y Tigrin. 🐶🐶🐱🐱 Cualquiera que conviva con animales sabe que el tiempo les afecta igual que a nosotros, aunque a veces no le prestamos atención. Tato ladra cuando hay tormenta porque tiene miedo, Benji se esconde. Con el calor, Tato busca su rincón del verano y Tigrin y Benji ya no se suben a la cama a acurrucarse a dormir conmigo. Luna está menos activa cuando el sol aprieta... Cada uno tiene sus cosas, y como parte de la familia una aprende a leerlos. ❤️
 
 De esa observación del día a día surgió la idea: ¿y si hubiera una app que te dijera cómo cuidar mejor a tus mascotas según el tiempo que hace hoy en tu ciudad?
 
-MeteoPet es exactamente eso. Una aplicación web que consulta el tiempo real de tu ciudad y te da consejos personalizados para cada una de tus mascotas, según su especie y las condiciones meteorológicas del momento. Además, incluye un foro donde sus humanos pueden compartir avisos y experiencias con su comunidad. 🌍💬
+MeteoPet es exactamente eso. Una aplicación web que consulta el tiempo real de tu ciudad y te da consejos personalizados para cada una de tus mascotas, según su especie y las condiciones meteorológicas del momento. Además, incluye un foro donde sus humanos pueden compartir avisos y experiencias con su comunidad.
 
 Va dirigida a cualquier persona que quiera lo mejor para sus animales y que, como yo, sea un poco friki del tiempo y del bienestar de sus peludos.
 
@@ -103,11 +103,11 @@ Va dirigida a cualquier persona que quiera lo mejor para sus animales y que, com
 
 ## 4. Objetivos del proyecto
 
-El objetivo principal de MeteoPet es ofrecer a los humanos de mascotas una herramienta útil, sencilla y simpática que les ayude a cuidar mejor a sus peludos según el tiempo que hace cada día en su ciudad. 🐾🌦️
+El objetivo principal de MeteoPet es ofrecer a los humanos de mascotas una herramienta útil, sencilla y simpática que les ayude a cuidar mejor a sus peludos según el tiempo que hace cada día en su ciudad. 
 
 ### Objetivos funcionales
 
-- Consultar el tiempo real de la ciudad principal en la que se encuentre el usuario usando la API de OpenWeatherMap. 🌍
+- Consultar el tiempo real de la ciudad principal en la que se encuentre el usuario usando la API de OpenWeatherMap. 
 - Mostrar consejos personalizados para cada mascota según su especie y las condiciones meteorológicas del momento.
 - Permitir registrar y gestionar el perfil de cada mascota (nombre, especie, raza, edad, foto...).
 - Gestionar ciudades favoritas y elegir una como ciudad principal para los consejos.
@@ -173,7 +173,7 @@ MeteoPet integra de forma práctica los conocimientos trabajados a lo largo del 
 ### 6.3 Utilidades
 
 **APIs:**
-- **OpenWeatherMap API** — API del tiempo usada para obtener las condiciones meteorológicas en tiempo real según las coordenadas de la ciudad del usuario. [https://openweathermap.org/api](https://openweathermap.org/api) 🌦️
+- **OpenWeatherMap API** — API del tiempo usada para obtener las condiciones meteorológicas en tiempo real según las coordenadas de la ciudad del usuario. [https://openweathermap.org/api](https://openweathermap.org/api) 
 
 **Recursos gráficos:**
 - **Stitch (IA)** — herramienta de inteligencia artificial usada como inspiración para el diseño visual de la aplicación. [https://stitch.withgoogle.com](https://stitch.withgoogle.com)
@@ -658,7 +658,7 @@ El manual incluye:
 
 [⬆️ Volver al índice](#2-índice)
 
-## 12. Conclusiones y aspectos a mejorar 🐾
+## 12. Conclusiones y aspectos a mejorar 
 
 ### Conclusiones
 
@@ -680,7 +680,7 @@ MeteoPet tiene mucho margen de crecimiento. Algunas cosas que me hubiera gustado
 - **Tienda solidaria:** añadir una sección donde se pudieran comprar productos para mascotas y parte de los beneficios fueran a protectoras o asociaciones de animales. 🛍️❤️
 - **Enlace con protectoras:** incluir un apartado con protectoras cercanas a la ciudad del usuario para fomentar la adopción responsable.
 
-Porque MeteoPet no es solo una app del tiempo para mascotas — es una forma de mentalizar a las personas de que el bienestar de sus animales importa, y de que siempre se puede hacer más por ellos. 🐾🌦️
+Porque MeteoPet no es solo una app del tiempo para mascotas — es una forma de mentalizar a las personas de que el bienestar de sus animales importa, y de que siempre se puede hacer más por ellos.
 
 [⬆️ Volver al índice](#2-índice)
 
