@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-05-2026 a las 19:53:19
+-- Tiempo de generación: 29-05-2026 a las 20:20:58
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -269,7 +269,8 @@ INSERT INTO `ciudades` (`id_ciudad`, `nombre_ciudad`, `provincia`, `pais`, `lati
 (226, 'Hinojosa del Valle', 'Badajoz', 'España', 38.483300, -6.183300),
 (227, 'Coria del Río', 'Sevilla', 'España', 37.287700, -6.054100),
 (228, 'Roses', 'Girona', 'España', 42.262000, 3.176900),
-(229, 'Burela', 'Lugo', 'España', 43.662600, -7.361800);
+(229, 'Burela', 'Lugo', 'España', 43.662600, -7.361800),
+(230, 'Puebla de la Reina', 'Badajoz', 'España', 38.664600, -6.102200);
 
 -- --------------------------------------------------------
 
@@ -290,9 +291,6 @@ CREATE TABLE `ciudades_favoritas` (
 
 INSERT INTO `ciudades_favoritas` (`id_favorita`, `id_usuario`, `id_ciudad`, `principal`) VALUES
 (1, 1, 1, 1),
-(2, 1, 2, 0),
-(3, 1, 4, 0),
-(6, 1, 22, 0),
 (7, 1, 8, 0),
 (11, 6, 105, 1),
 (12, 7, 9, 1),
@@ -325,7 +323,10 @@ INSERT INTO `ciudades_favoritas` (`id_favorita`, `id_usuario`, `id_ciudad`, `pri
 (42, 26, 126, 1),
 (43, 27, 180, 1),
 (44, 28, 101, 1),
-(45, 29, 188, 1);
+(45, 29, 188, 1),
+(46, 1, 52, 0),
+(47, 1, 11, 0),
+(49, 30, 41, 1);
 
 -- --------------------------------------------------------
 
@@ -472,13 +473,29 @@ CREATE TABLE `foro_consejos` (
 --
 
 INSERT INTO `foro_consejos` (`id_publicacion`, `id_usuario`, `id_especie`, `id_admin`, `ciudad`, `provincia`, `titulo`, `contenido`, `fecha_envio`, `estado`, `fecha_revision`, `likes`) VALUES
-(1, 1, 1, 3, 'Hornachos', 'Badajoz', 'Alerta por altas temperaturas', 'Hoy las temperaturas están subiendo muchísimo. Recordad hidratar a vuestros perros y evitar paseos en horas de máximo calor.', '2026-01-20 22:55:33', 'aprobado', '2026-04-20 17:32:20', 1),
+(1, 1, 1, 3, 'Hornachos', 'Badajoz', 'Alerta por altas temperaturas', 'Hoy las temperaturas están subiendo muchísimo. Recordad hidratar a vuestros perros y evitar paseos en horas de máximo calor.', '2026-01-20 22:55:33', 'aprobado', '2026-04-20 17:32:20', 2),
 (3, 1, 2, 3, 'Zafra', 'Badajoz', 'Advertencia por viento fuerte', 'Mucho ojo hoy con las ventanas abiertas. El viento está muy fuerte y un golpe podría asustar o herir a los gatos.', '2026-01-20 22:55:33', 'aprobado', '2026-01-20 22:55:33', 14),
-(5, 1, 1, 3, 'Hornachos', 'Badajoz', 'Nueva zona de sombra', 'Si queréis un nuevo lugar con sombra para poder estar en estos días de calor que ya está empezando, os recomiendo la fuente de los cristianos, hay zonas con bastante sombra, agua y sitio para sentarse tranquilos mientras nuestros peludos juegan!.', '2026-04-19 13:37:16', 'aprobado', '2026-04-20 17:32:25', 1),
-(6, 8, 1, 3, 'Huesca', 'Huesca', 'Nuevo parque canino', 'Me han dicho que han abierto un nuevo parque para perros al norte de la ciudad. Hay mucha vegetación por lo que debéis tener cuidado en esta época ya que pueden coger garrapatas facilmente.', '2026-04-23 22:07:39', 'aprobado', '2026-05-23 19:48:01', 1),
+(5, 1, 1, 3, 'Hornachos', 'Badajoz', 'Nueva zona de sombra', 'Si queréis un nuevo lugar con sombra para poder estar en estos días de calor que ya está empezando, os recomiendo la fuente de los cristianos, hay zonas con bastante sombra, agua y sitio para sentarse tranquilos mientras nuestros peludos juegan!.', '2026-04-19 13:37:16', 'aprobado', '2026-04-20 17:32:25', 0),
+(6, 8, 1, 3, 'Huesca', 'Huesca', 'Nuevo parque canino', 'Me han dicho que han abierto un nuevo parque para perros al norte de la ciudad. Hay mucha vegetación por lo que debéis tener cuidado en esta época ya que pueden coger garrapatas facilmente.', '2026-04-23 22:07:39', 'aprobado', '2026-05-23 19:48:01', 3),
 (7, 11, 1, 3, 'Barcelona', 'Barcelona', 'Camino encharcado', 'No ir por el camino de la playa porque está lleno de charcos', '2026-04-23 23:51:21', 'aprobado', '2026-05-23 19:47:48', 1),
 (8, 22, 2, 3, '', '', 'adfasd', 'fasdfas', '2026-05-20 19:26:42', 'rechazado', '2026-05-23 19:47:52', 0),
-(9, 17, 1, 3, 'Ourense', 'Ourense', 'Hace calor en el parque central', 'No vayais al parque central al mediodia porque no hay árboles', '2026-05-24 19:45:07', 'aprobado', '2026-05-24 19:46:09', 1);
+(9, 17, 1, 3, 'Ourense', 'Ourense', 'Hace calor en el parque central', 'No vayais al parque central al mediodia porque no hay árboles', '2026-05-24 19:45:07', 'aprobado', '2026-05-24 19:46:09', 2),
+(10, 15, 1, 3, 'Palencia', 'Palencia', 'Zonas con agua', 'Alguien me puede recomendar una zona en la que haya fuentes para que puedan beber nuestros perros?En Palencia capital', '2026-05-27 21:29:53', 'aprobado', '2026-05-27 22:23:35', 0),
+(11, 3, 2, 3, 'Briviesca', 'Burgos', 'hola', 'Prueba', '2026-05-27 22:23:25', 'rechazado', '2026-05-27 22:23:33', 0),
+(12, 22, 1, NULL, 'Badalona', 'Barcelona', 'Buscamos perri-amigos', 'Próximamente nos mudamos a Badalona y nos gustaría hacer nuevos amigos.', '2026-05-27 22:40:06', 'pendiente', NULL, 0),
+(13, 6, 2, 3, 'Zafra', 'Badajoz', 'Ojo con las tormentas de esta semana', 'Mi gata Luna lleva dos días escondida debajo de la cama. Con las tormentas que están cayendo está muy asustada. ¿A alguien más le pasa? Lo que me funciona es ponerle música suave y dejarle su mantita cerca.', '2026-05-10 10:23:00', 'aprobado', '2026-05-10 11:00:00', 5),
+(14, 9, 1, 3, 'Sevilla', 'Sevilla', 'Cuidado con el asfalto en Sevilla', 'Chicos, hoy a mediodía el suelo quemaba una barbaridad. Mi perra se negaba a andar y con razón. Salid muy temprano o ya de noche, el resto del día es un riesgo para sus patitas.', '2026-05-12 14:05:00', 'aprobado', '2026-05-12 15:00:00', 8),
+(15, 12, 2, 3, 'Barcelona', 'Barcelona', 'El calor y los gatos de exterior', 'Tengo un gato que sale al jardín y con este calor lo encuentro siempre a la sombra sin moverse. He puesto varios cuencos de agua por el jardín y parece que lo agradece. Os lo recomiendo.', '2026-05-14 09:15:00', 'aprobado', '2026-05-14 10:00:00', 3),
+(16, 18, 1, 3, 'Mérida', 'Badajoz', 'Zona de baño para perros en Mérida', 'Para los que seáis de Mérida o estéis de paso, hay una zona junto al río donde los perros pueden bañarse tranquilamente. Con este calor mi Dante disfruta muchísimo. Muy recomendable por las mañanas temprano.', '2026-05-15 08:30:00', 'aprobado', '2026-05-15 09:30:00', 6),
+(17, 25, 2, 3, 'Valladolid', 'Valladolid', 'Humedad y problemas en el pelo', 'Con la humedad de estos días mi gata aparece siempre con el pelo encrespado y más sucio de lo normal. He empezado a cepillarla cada día y ha mejorado bastante. Para los que tengáis persas o angoras esto es especialmente importante.', '2026-05-16 17:45:00', 'aprobado', '2026-05-16 18:30:00', 4),
+(18, 13, 1, 3, 'Granada', 'Granada', 'Alerta garrapatas en el parque del Genil', 'Aviso importante para los que paseéis por el parque del Genil. Esta semana he encontrado dos garrapatas en mis perras después del paseo. Revisad bien a vuestros animales al volver a casa, especialmente entre los dedos y detrás de las orejas.', '2026-05-18 19:00:00', 'aprobado', '2026-05-18 20:00:00', 11),
+(19, 7, 2, 3, 'Madrid', 'Madrid', 'Mi gato odia el ventilador', 'He descubierto que a mi gato le da pánico el ventilador. Lo pongo para que refresque la habitación y él sale corriendo. ¿A alguien más le pasa? Al final lo pongo solo cuando él no está en la habitación.', '2026-05-19 21:10:00', 'aprobado', '2026-05-19 22:00:00', 7),
+(20, 15, 1, 3, 'Palencia', 'Palencia', 'Paseos cortos con la lluvia', 'Esta semana no para de llover en Palencia. Mi perro insiste en salir igual pero lo limito a paseos cortitos. Lo peor es secarlo al volver, odia la toalla jajaja. ¿Alguien tiene algún truco para que no se escapen corriendo cuando ven la toalla?', '2026-05-20 11:30:00', 'aprobado', '2026-05-20 12:30:00', 4),
+(21, 28, 2, 3, 'Bilbao', 'Vizcaya', 'Gatos y niebla', 'Curioso pero desde que hay tanta niebla en Bilbao mi gato no quiere salir al balcón. Antes se pasaba horas ahí. Supongo que los olores raros que trae la niebla le ponen nervioso. ¿Alguien sabe si es normal?', '2026-05-21 10:00:00', 'aprobado', '2026-05-21 11:00:00', 3),
+(22, 19, 1, 3, 'Zaragoza', 'Zaragoza', 'Cuidado con el viento del Cierzo', 'Para los zaragozanos, el Cierzo está pegando muy fuerte esta semana. Mi perro se asusta con las ráfagas fuertes y tira mucho de la correa. Os recomiendo evitar zonas abiertas y pasear por calles con edificios que corten el viento.', '2026-05-22 16:20:00', 'aprobado', '2026-05-22 17:00:00', 5),
+(23, 27, 2, 3, 'San Sebastián', 'Guipúzcoa', 'Día de lluvia, día de juegos en casa', 'Con la lluvia que cae hoy en Donosti no hay quien salga. He aprovechado para hacer juegos de olfato con mis gatos en casa. Les escondo premios por los rincones y se entretienen un montón. Super recomendable para días de lluvia.', '2026-05-23 12:00:00', 'aprobado', '2026-05-23 13:00:00', 9),
+(24, 20, 1, 3, 'Badajoz', 'Badajoz', 'Protector solar para perros', 'Hoy me ha dicho el veterinario que a los perros de pelo claro o con zonas sin pelo hay que ponerles protector solar en verano. No lo sabía y me ha parecido importante compartirlo. Que no les dé directamente el sol en la barriga sobre todo.', '2026-05-24 09:45:00', 'aprobado', '2026-05-24 10:30:00', 12),
+(25, 26, 2, 3, 'Málaga', 'Málaga', 'Aire acondicionado sí o no', 'Tengo dudas sobre si poner el aire acondicionado para mi gata. Lo pongo a 24 grados y parece que está bien pero no sé si le puede sentar mal el cambio de temperatura al salir. ¿Alguien tiene experiencia con esto?', '2026-05-25 18:30:00', 'aprobado', '2026-05-25 19:30:00', 6);
 
 -- --------------------------------------------------------
 
@@ -497,13 +514,99 @@ CREATE TABLE `likes_foro` (
 --
 
 INSERT INTO `likes_foro` (`id_like`, `id_publicacion`, `id_usuario`) VALUES
-(6, 1, 3),
+(11, 1, 3),
+(13, 1, 22),
 (1, 3, 1),
 (8, 3, 3),
-(4, 5, 3),
+(9, 6, 1),
 (5, 6, 3),
-(7, 7, 3),
-(3, 9, 3);
+(14, 6, 22),
+(15, 7, 22),
+(10, 9, 1),
+(3, 9, 3),
+(16, 13, 1),
+(17, 13, 9),
+(18, 13, 12),
+(19, 13, 18),
+(20, 13, 25),
+(21, 14, 1),
+(22, 14, 6),
+(23, 14, 13),
+(24, 14, 15),
+(25, 14, 19),
+(26, 14, 22),
+(27, 14, 27),
+(28, 14, 28),
+(29, 15, 7),
+(30, 15, 20),
+(31, 15, 26),
+(32, 16, 1),
+(33, 16, 9),
+(34, 16, 13),
+(35, 16, 18),
+(36, 16, 19),
+(37, 16, 25),
+(38, 17, 6),
+(39, 17, 12),
+(40, 17, 20),
+(41, 17, 27),
+(42, 18, 1),
+(43, 18, 6),
+(44, 18, 7),
+(45, 18, 9),
+(46, 18, 12),
+(47, 18, 13),
+(48, 18, 15),
+(49, 18, 18),
+(50, 18, 19),
+(51, 18, 22),
+(52, 18, 25),
+(53, 19, 1),
+(54, 19, 6),
+(55, 19, 9),
+(56, 19, 12),
+(57, 19, 15),
+(58, 19, 20),
+(59, 19, 26),
+(60, 20, 1),
+(61, 20, 13),
+(62, 20, 18),
+(63, 20, 27),
+(64, 21, 6),
+(65, 21, 20),
+(66, 21, 28),
+(67, 22, 1),
+(68, 22, 9),
+(69, 22, 13),
+(70, 22, 19),
+(71, 22, 25),
+(72, 23, 1),
+(73, 23, 6),
+(74, 23, 7),
+(75, 23, 9),
+(76, 23, 12),
+(77, 23, 13),
+(78, 23, 15),
+(79, 23, 19),
+(80, 23, 22),
+(81, 24, 1),
+(82, 24, 6),
+(83, 24, 7),
+(84, 24, 9),
+(85, 24, 12),
+(86, 24, 13),
+(87, 24, 15),
+(88, 24, 18),
+(89, 24, 19),
+(90, 24, 20),
+(91, 24, 22),
+(92, 24, 25),
+(93, 25, 1),
+(94, 25, 7),
+(95, 25, 12),
+(96, 25, 18),
+(97, 25, 20),
+(98, 25, 27);
 
 -- --------------------------------------------------------
 
@@ -552,7 +655,7 @@ INSERT INTO `mascotas` (`id_mascota`, `id_usuario`, `id_especie`, `nombre`, `eda
 (27, 18, 1, 'Dante', 7, 'macho', 'uploads/mascotas/mascota_69ea91132e9a7.jpg', 'Mestizo'),
 (28, 19, 1, 'Trufa', 8, 'hembra', 'uploads/mascotas/mascota_69ea918a65d08.jpg', 'Mastín'),
 (29, 3, 1, 'Coli', 14, 'hembra', 'uploads/mascotas/mascota_69ea91c0c0904.jpg', 'Mestiza'),
-(31, 22, 1, 'dfads', 4, 'macho', 'uploads/mascotas/mascota_6a0def0ff1c37.pdf', 'fasdfs'),
+(31, 22, 1, 'Archie', 8, 'macho', 'uploads/mascotas/mascota_6a175616382a5.jpg', 'fasdfs'),
 (32, 23, 1, 'Tao', 8, 'macho', 'uploads/mascotas/mascota_6a1621110adcc.jpg', 'Mestizo'),
 (33, 23, 1, 'Flora', 6, 'hembra', 'uploads/mascotas/mascota_6a1621409ecfa.jpg', 'Mestiza'),
 (34, 24, 2, 'Romeo', 8, 'macho', 'uploads/mascotas/mascota_6a16217962c61.jpg', 'Europeo Común'),
@@ -588,9 +691,10 @@ CREATE TABLE `mensajes` (
 INSERT INTO `mensajes` (`id_mensaje`, `id_usuario`, `nombre`, `email`, `asunto`, `texto`, `fecha_envio`, `tipo`, `estado`) VALUES
 (1, 1, 'Cristina Delgado Sayavera', 'cris@meteopet.com', 'Consulta sobre consejos de verano', 'Tengo un perro mayor y me gustaría saber si la aplicación tendrá avisos especiales en días de mucho calor.', '2026-01-20 22:54:23', 'consulta', 'resuelto'),
 (2, NULL, 'Soraya Luengo Jiménez', 'soraya@meteopet.com', 'Problema al añadir una mascota', 'Al intentar añadir una nueva mascota, la página no carga correctamente.', '2026-01-20 22:54:23', 'problema', 'resuelto'),
-(3, NULL, 'Juan García', 'juan@gmail.com', 'Duda general', 'He visto la web y me parece muy interesante. ¿Tenéis pensado sacar una app móvil?', '2026-01-20 22:54:23', 'otro', 'en_proceso'),
+(3, NULL, 'Juan García', 'juan@gmail.com', 'Duda general', 'He visto la web y me parece muy interesante. ¿Tenéis pensado sacar una app móvil?', '2026-01-20 22:54:23', 'otro', 'pendiente'),
 (4, NULL, 'María López', 'maria@gmail.com', 'Sugerencia de nueva ciudad', 'Me gustaría que se añadiera la ciudad de Cáceres para poder consultar el tiempo.', '2026-01-20 22:54:23', 'sugerencia_ciudad', 'resuelto'),
-(5, NULL, 'Pepi', 'pepi@gmail.com', 'uso app', 'La app se puede usar sin registrarse?', '2026-04-20 18:36:52', 'consulta', 'pendiente');
+(5, NULL, 'Pepi', 'pepi@gmail.com', 'uso app', 'La app se puede usar sin registrarse?', '2026-04-20 18:36:52', 'consulta', 'en_proceso'),
+(6, 22, 'Juan', 'juan@meteopet.com', 'Cambiar foto', 'No consigo cambiar la foto de mi mascota', '2026-05-27 22:38:58', 'problema', 'pendiente');
 
 -- --------------------------------------------------------
 
@@ -614,7 +718,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `password_hash`, `fecha_registro`, `rol`, `avatar`) VALUES
 (1, 'Cris Delgado Sayavera', 'cris@meteopet.com', '$2y$10$gjaqxJIyiDyETZwzCWfMlujDKqBIR37xewtAjthcaQ6kkFm1IBuAe', '2026-01-20 22:41:36', 'usuario', 'avatar15.png'),
-(3, 'Administrador MeteoPet', 'admin@meteopet.com', '$2y$10$zVPa9zwvxNGh6lN9kmx4OOZfGPqjX8n1l9How19E/bfqKfI952RxW', '2026-01-20 22:41:37', 'administrador', 'avatar9.png'),
+(3, 'Administrador MeteoPet', 'admin@meteopet.com', '$2y$10$sNIRc2sR7DmgEuXFbUt2jOGh0rBX84U0VDbl7UGwIT9dfDVR9eRQC', '2026-01-20 22:41:37', 'administrador', 'avatar9.png'),
 (6, 'María Martín Velez', 'mmartinv@meteopet.com', '$2y$10$s6VXtE9Los48HyTmGGe99.A0uVBefRr6TJ.nK5ep1ykZJXK9BNJ.i', '2026-04-23 20:24:13', 'usuario', 'avatar11.png'),
 (7, 'Estrella Chamorro Real', 'estrella@meteopet.com', '$2y$10$awpviXwzopC9lMxlzDgmC.l6Qs.ORkvg7dl.fd3gOeg67Jxz5LdHe', '2026-04-23 20:34:36', 'usuario', 'avatar14.png'),
 (8, 'Maika Delgado Corcobado', 'maika@meteopet.com', '$2y$10$bFgWGF.hAVzgAm2v3NFxWOSn66PgoNQ2NMpcuivZXQ8xnJvpyEmmW', '2026-04-23 20:38:10', 'usuario', 'avatar17.png'),
@@ -637,7 +741,8 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `password_hash`, `fecha
 (26, 'Jeimy Aquino', 'jeimy@meteopet.com', '$2y$10$oDUfWiBA53qUfmCWJWsGnuiqS4grfwN.EBUX9xI4DK4kCPlDCGbr.', '2026-05-27 00:34:01', 'usuario', 'avatar14.png'),
 (27, 'Toffa Evans', 'toffa@meteopet.com', '$2y$10$/vPf0Aie2Uvi/Ut1962qlOFgaSe.bshk5VPanm..3ovhV8j/W8JSm', '2026-05-27 00:34:46', 'usuario', 'avatar20.png'),
 (28, 'Andrea Aquino', 'andy@meteopet.com', '$2y$10$8mMxmYt0FM1LNsMV9.ov2uIaw.rUB5AQa8C1p3NDTmtm3x5DkXgn.', '2026-05-27 00:47:09', 'usuario', 'avatar3.png'),
-(29, 'Usuario Prueba', 'prueba@meteopet.com', '$2y$10$PxDW22ATnMeZqPljXvVpwOPBPPx3mnXQ2b1XyqZNwpOi.T7njtbAa', '2026-05-27 01:02:39', 'usuario', 'avatar8.png');
+(29, 'Usuario Prueba', 'prueba@meteopet.com', '$2y$10$9dfdazlqMI9Ivyq7qWmguuhzlB.fiNPzH4TGkKcXQDosLjIoBJ4JS', '2026-05-27 01:02:39', 'usuario', 'avatar8.png'),
+(30, 'Prueba2', 'prueba2@meteopet.com', '$2y$10$DOR.EIUWsZ9uBU63AMLqYOn0HBbCTGhDjbbTRDZw3NcQTHNY3ss.i', '2026-05-28 14:41:07', 'usuario', 'avatar16.png');
 
 --
 -- Índices para tablas volcadas
@@ -723,13 +828,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ciudades`
 --
 ALTER TABLE `ciudades`
-  MODIFY `id_ciudad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
+  MODIFY `id_ciudad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=231;
 
 --
 -- AUTO_INCREMENT de la tabla `ciudades_favoritas`
 --
 ALTER TABLE `ciudades_favoritas`
-  MODIFY `id_favorita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_favorita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT de la tabla `consejos_especificos`
@@ -747,31 +852,31 @@ ALTER TABLE `especies`
 -- AUTO_INCREMENT de la tabla `foro_consejos`
 --
 ALTER TABLE `foro_consejos`
-  MODIFY `id_publicacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_publicacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `likes_foro`
 --
 ALTER TABLE `likes_foro`
-  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id_mascota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_mascota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT de la tabla `mensajes`
 --
 ALTER TABLE `mensajes`
-  MODIFY `id_mensaje` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_mensaje` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- Restricciones para tablas volcadas
